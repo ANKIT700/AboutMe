@@ -10,8 +10,13 @@ const config = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+
   },
+  devServer: {
+    historyApiFallback: true,
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "./index.html"),

@@ -11,11 +11,17 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
+    publicPath: '/',
 
   },
   devServer: {
+    contentBase: path.join(__dirname, 'output'),
+    compress: true,
+    port: 9000,
     historyApiFallback: true,
+    publicPath: '/'
   },
+ 
 
   plugins: [
     new HtmlWebpackPlugin({

@@ -3,6 +3,7 @@ import logo from "./logo.svg"
 import "./App.css"
 import { Route,  BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/header/Navbar";
+import MyProfileMain from "./components/myProfile/MyProfileMain";
 
 
 
@@ -15,7 +16,7 @@ class App extends Component {
        <Router>
        <Navbar />
       <Routes>
-        <Route path='/' exact element={<Home/>} />
+        <Route path='/' exact element={<MyProfileMain/>} />
         <Route path='/about' element={<Bus/>} />
         <Route path='/events' element={<Cart/>} />
         <Route path='/annual' element={<NotFound/>} />

@@ -3,12 +3,18 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
   
 export const Nav = styled.nav`
-  background: #63D471;
+//   background: transparent;
+background: rgb(0,61,255);
+background: linear-gradient(270deg, rgba(0,61,255,0.6082808123249299) 21%, rgba(121,18,9,0.5018382352941176) 43%, rgba(240,6,6,0.3785889355742297) 80%);
   height: 85px;
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  widtg:100%
+//   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
+  position: absolute;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.5rem;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
@@ -22,8 +28,12 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+       color: #fd5353;
+       border-bottom: 6px solid #fd5353;
+       border-radius: 200px 200px 100px 100px;
+    ;
   }
+ 
 `;
   
 export const Bars = styled(FaBars)`
@@ -43,6 +53,8 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  width: -webkit-fill-available;
+
   margin-right: -24px;
   /* Second Nav */
   /* margin-right: 24px; */
@@ -59,7 +71,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
   /* Third Nav */
-  /* justify-content: flex-end;
+//    justify-content: flex-end;
   width: 100vw; */
   @media screen and (max-width: 768px) {
     display: none;

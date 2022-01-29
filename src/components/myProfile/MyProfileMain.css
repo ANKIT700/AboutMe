@@ -1,0 +1,95 @@
+
+
+
+.sections {
+  padding-top: 50px;
+  min-height: 1080px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.thumbnail {
+  background-color: #000;
+}
+
+#Home {
+  background-image: url("https://res.cloudinary.com/achipapakon/image/upload/v1461674434/architecture-wallpapers-free-22_qw7pwy.jpg");
+}
+#About {
+  background-image: url("https://awesomewallpapers.files.wordpress.com/2015/01/i22qq7s.jpg");
+}
+#Portfolio {
+  background-image: url("https://s3.amazonaws.com/architecture-org/files/modules/chicago-architecture-foundation-river-cruise-chica-5.jpg");
+}
+#Contact {
+  background-image: url("https://res.cloudinary.com/achipapakon/image/upload/v1456940039/1600_1200_20091117092341120058_wocj3h.jpg");
+}
+.ast-dancing
+{
+  font-family: 'Dancing Script';
+}
+/* // .ast-lucida
+//     font-family: $lucida */
+
+.ast-home-title {
+  padding-top: 20%;
+  text-shadow: 2px 2px 2px #323232;
+  /* // font-family: $lucida */
+  font-size: 8vw;
+  color: #e1e1e1;
+
+}
+
+.ast-home-subtitle {
+  text-shadow: 2px 2px 2px #323232;
+  font-family: 'Dancing Script';
+  font-size: 4.6vw;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+.ast-about-title {
+  font-family: 'Dancing Script';
+  font-size: 410%;
+  color: #000;
+}
+
+@media only screen and (min-width: 1560px) {
+  .ast-home-title {
+    font-size: 124px;
+  }
+  .ast-home-subtitle {
+    font-size: 71px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .ast-home-title {
+    font-size: 10vw;
+  }
+  .ast-home-subtitle {
+    font-size: 8.05vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    width: 300px;
+  }
+
+  .ast-about-title {
+    font-family: 'Dancing Script';
+    font-size: 410%;
+    color: #000;
+  }
+
+  .ast-captions {
+    color: #e1e1e1;
+  }
+}
